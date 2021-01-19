@@ -1,0 +1,24 @@
+
+print("Welcome to the Love Calculator!")
+name1 = input("What is your name? \n")
+name2 = input("What is their name? \n")
+
+#Write your code below this line 👇
+
+combine_name = name1 + name2
+new_combine_name = combine_name.lower()
+t = new_combine_name.count("t")
+r = new_combine_name.count("r")
+u = new_combine_name.count("u")
+e = new_combine_name.count("e")
+true = t+r+u+e
+
+l = new_combine_name.count("l")
+o = new_combine_name.count("o")
+v = new_combine_name.count("v")
+e = new_combine_name.count("e")
+love = l+o+v+e
+
+score = str(true) + str(love)
+
+print(f"your score is {score}")

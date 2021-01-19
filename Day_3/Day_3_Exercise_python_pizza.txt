@@ -1,0 +1,35 @@
+print("welcome to Python Pizza");
+bill = 0
+print("""Price for pizza are 
+        small = $15
+        Medium = $20
+        Large pizza = $25""")
+print("pepperoni for small pizza : +2")
+print("pepperoni for medium or large pizza : +3")
+print("Extra cheese for any size pizza : +1\n")
+
+size = int(input("select the size for pizza \n 1 = small \n 2 = Medium \n 3 = Large \n ->"))
+
+if(size == 1) :
+    bill += 15
+elif(size == 2) :
+    bill += 20
+elif(size == 3) :
+    bill += 25
+else :
+    print("try again letter")
+
+pepp_check = int(input("do you want to add pepperoni ?? \n 1 - yes \n 2 - NO \n ->"))
+
+
+if(pepp_check == 1 and size == 1):
+       bill += 2
+elif(pepp_check == 1 and (size == 2 or size == 3)):
+       bill += 3
+
+extra_cheese = int(input("do you want to extra cheese ?? \n 1 - yes \n 2 - NO \n ->"))
+
+if(extra_cheese == 1) :
+       bill += 1
+
+print(f"your total bill is : ${bill}")
